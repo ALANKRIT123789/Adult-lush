@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18+ Private Content</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top, #111 0%, #000 60%);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(0,0,0,0.85);
+    border: 1px solid #222;
+    padding: 30px;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255,0,100,0.25);
+}
+
+h1 {
+    color: #ff2f92;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #ff2f92, #ff0055);
+    border: none;
+    padding: 14px 30px;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,0,100,0.6);
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #666;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="ageGate">
+    <h1>18+ Warning</h1>
+    <p>
+        This website contains adult-oriented material intended for mature audiences only.
+        By entering, you confirm that you are at least 18 years old.
+    </p>
+    <button onclick="enterSite()">I am 18+</button>
+    <div class="footer">Private access • Discretion advised</div>
+</div>
+
+<div class="container hidden" id="mainSite">
+    <h1>Private Area</h1>
+    <p>
+        Exclusive content is curated for premium viewers.
+        Updates are posted regularly.
+    </p>
+    <button onclick="alert('Coming soon')">Unlock Content</button>
+    <div class="footer">© 2026 All Rights Reserved</div>
+</div>
+
+<script>
+function enterSite() {
+    document.getElementById("ageGate").classList.add("hidden");
+    document.getElementById("mainSite").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
