@@ -1,101 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>18+ Private Content</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: radial-gradient(circle at top, #111 0%, #000 60%);
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    background: rgba(0,0,0,0.85);
-    border: 1px solid #222;
-    padding: 30px;
-    width: 90%;
-    max-width: 420px;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(255,0,100,0.25);
-}
-
-h1 {
-    color: #ff2f92;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 14px;
-    color: #ccc;
-    line-height: 1.6;
-}
-
-button {
-    margin-top: 20px;
-    background: linear-gradient(135deg, #ff2f92, #ff0055);
-    border: none;
-    padding: 14px 30px;
-    color: white;
-    font-size: 16px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255,0,100,0.6);
-}
-
-.hidden {
-    display: none;
-}
-
-.footer {
-    margin-top: 15px;
-    font-size: 12px;
-    color: #666;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium adult video streaming site with exclusive content, HD videos, and ad-free experience.">
+    <meta name="keywords" content="porn, adult videos, premium porn, HD porn">
+    <title>Premium Porn Hub</title>
+    <style>
+        body { background-color: #121212; color: #fff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #000; padding: 10px; }
+        nav ul { list-style: none; display: flex; justify-content: space-around; }
+        nav a { color: #fff; text-decoration: none; }
+        .hero { background-color: #333; padding: 20px; text-align: center; }
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; padding: 10px; }
+        .video-item { background-color: #222; padding: 10px; }
+        .video-item img { width: 100%; height: auto; }
+        .sidebar { float: right; width: 20%; padding: 10px; }
+        .categories { padding: 10px; }
+        footer { background-color: #000; padding: 10px; text-align: center; }
+        .modal { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #333; padding: 20px; }
+        #ageModal { display: block; }
+        @media (max-width: 768px) { .sidebar { width: 100%; float: none; } }
+    </style>
+    <!-- SEO and Analytics -->
+    <meta property="og:title" content="Premium Porn Hub">
+    <meta property="og:description" content="Exclusive adult content">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXX-X');
+    </script>
 </head>
-
 <body>
+    <!-- Age Verification Popup -->
+    <div id="ageModal" class="modal">
+        <p>Are you 18+?</p>
+        <button onclick="document.getElementById('ageModal').style.display='none'">Yes</button>
+        <button onclick="window.location.href='https://www.google.com'">No</button>
+    </div>
 
-<div class="container" id="ageGate">
-    <h1>18+ Warning</h1>
-    <p>
-        This website contains adult-oriented material intended for mature audiences only.
-        By entering, you confirm that you are at least 18 years old.
-    </p>
-    <button onclick="enterSite()">I am 18+</button>
-    <div class="footer">Private access • Discretion advised</div>
-</div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">Upload</a></li>
+                <li><a href="#">Login/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="container hidden" id="mainSite">
-    <h1>Private Area</h1>
-    <p>
-        Exclusive content is curated for premium viewers.
-        Updates are posted regularly.
-    </p>
-    <button onclick="alert('Coming soon')">Unlock Content</button>
-    <div class="footer">© 2026 All Rights Reserved</div>
-</div>
+    <section class="hero">
+        <h1>Join Premium for Ad-Free Viewing, Exclusive Content, and HD Videos!</h1>
+        <button onclick="document.getElementById('premiumModal').style.display='block'">Subscribe Now</button>
+    </section>
 
-<script>
-function enterSite() {
-    document.getElementById("ageGate").classList.add("hidden");
-    document.getElementById("mainSite").classList.remove("hidden");
-}
-</script>
+    <main>
+        <section class="video-grid">
+            <!-- Sample Videos -->
+            <div class="video-item">
+                <a href="https://xhamster44.desi/videos/reina-rae-begs-stepdad-to-stuff-her-tight-fuck-hole-xhbTfbB?utm_source=ext_shared&utm_medium=referral&utm_campaign=tg">
+                    <img src="https://via.placeholder.com/200x150?text=Reina+Rae+Video" alt="Reina Rae Begs Stepdad">
+                    <p>Reina Rae Begs Stepdad To Stuff Her Tight Fuck Hole</p>
+                </a>
+                <p>Views: 1M | Duration: 10:00 | Uploader: Anon</p>
+            </div>
+            <!-- Placeholder for other 11 videos -->
+            <div class="video-item">
+                <a href="#"><img src="https://via.placeholder.com/200x150?text=Video+1" alt="Video 1"></a>
+                <p>Sample Video 1</p>
+                <p>Views: 500K | Duration: 5:00 | Uploader: User1</p>
+            </div>
+            <div class="video-item">
+                <a href="#"><img src="https://via.placeholder.com/200x150?text=Video+2" alt="Video 2"></a>
+                <p>Sample Video 2</p>
+                <p>Views: 600K | Duration: 6:00 | Uploader: User2</p>
+            </div>
+            <!-- Repeat for up to 12, abbreviated for conciseness -->
+        </section>
 
+        <aside class="sidebar">
+            <!-- Ad Banners -->
+            <img src="https://via.placeholder.com/160x600?text=Ad+Banner" alt="Ad">
+            <!-- Affiliate Links -->
+            <a href="https://affiliate.example.com">Affiliate Partner</a>
+            <!-- Google AdSense Placeholder -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXX" data-ad-slot="XXXX" data-ad-format="auto"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </aside>
+
+        <section class="categories">
+            <h2>Categories</h2>
+            <a href="#">Amateur</a> | <a href="#">HD Porn</a> | <a href="#">MILF</a> | etc.
+        </section>
+    </main>
+
+    <!-- Premium Modal -->
+    <div id="premiumModal" class="modal">
+        <h2>Premium Tiers</h2>
+        <p>Basic: $9.99/mo - Ad-free, HD videos</p>
+        <p>Unlimited: $19.99/mo - Downloads, Exclusive</p>
+        <!-- Stripe Payment Button Placeholder -->
+        <form action="/charge" method="post">
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_XXXX"
+                    data-amount="999"
+                    data-name="Premium Basic"
+                    data-description="$9.99/month"
+                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                    data-locale="auto">
+            </script>
+        </form>
+        <button onclick="document.getElementById('premiumModal').style.display='none'">Close</button>
+    </div>
+
+    <footer>
+        <a href="#">Terms</a> | <a href="#">Privacy Policy</a> | <a href="#">Partner Program</a>
+    </footer>
+
+    <script>
+        // JS for previews (placeholder)
+        document.querySelectorAll('.video-item img').forEach(img => {
+            img.addEventListener('mouseover', () => { console.log('Preview start'); });
+        });
+    </script>
 </body>
-</html>
+    </html>
